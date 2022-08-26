@@ -1,0 +1,107 @@
+.About {
+  display: flex;
+  padding-left: 81px;
+  padding-right: 81px; 
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: $gray;
+  background-color: pink;
+  
+  @media (max-width: 720px) {
+    width: 100%;
+    flex-direction: column;
+    padding-left: 30px;
+      padding-right: 30px;
+    
+  }
+
+  @media (max-width: 992px) {
+    width: 100%;
+    flex-direction: column-reverse;
+    padding-left: 68px;
+      padding-right: 68px;
+      gap: 80px;
+    
+  }
+
+  &-image {
+    background-image: url(https://livedemo00.template-help.com/wt_62466_v3/images/landing-environment-2-720x459.jpg);
+    width: 100%;
+    height: 363px;
+    background-size: 100% 100%;
+    
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  &-bold {
+    font-weight: 400;
+  }
+
+  &-description {
+    color: $card-message;
+   
+      font-size: 15px;  
+      line-height: 1.6;
+      letter-spacing: 0.06em;
+      font-weight: 300;    
+    
+  }
+  &-content {
+    width: 100%;
+    text-align: start;
+    font-weight: 300;
+    line-height: 1.41667;
+    font-size: 19px;
+    font-family: $font-secondary;
+    color: $primary;
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    gap: 18px;
+    color: #29293a;
+    
+  }
+
+  &-title {
+    font-size: 34px;
+    line-height: 1.375;
+    letter-spacing: 0.06em;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: $primary;
+    font-family: $font-primary;
+    text-align: start;
+
+    &::after {
+      display: block;
+      content: "";
+      text-align: start;
+      background: $gradient;
+      max-width: 100px;
+      width: 100%;
+      height: 3px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 28px;  
+      line-height: 1.45;
+      letter-spacing: 0.06em;
+      font-weight: 300;    
+    }
+
+    @media (max-width: 768px) {
+      font-size: 24px;  
+      line-height: 1.45;
+      letter-spacing: 0.06em;
+      font-weight: 300;    
+    }
+  }
+
+  &-revers {
+    flex-direction: row-reverse;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

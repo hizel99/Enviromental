@@ -1,0 +1,46 @@
+.Home {
+  padding: 40px 0;
+  background-image: linear-gradient(to right, $purple 20%, $pink);
+
+  &-box {
+    margin-right: 18px;
+    background-color: $blue;
+    padding: 5px 18px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 700;
+    color: $white;
+    line-height: 1.55556;
+  }
+  &-brave {
+    font-weight: 700;
+    margin-right: 3.56px;
+  }
+  &-link {
+    font-weight: 700;
+    color: $yellow;
+    margin-left: 3.56px;
+    cursor: pointer;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &-message {
+    color: $white;
+    font-family: $font-secondary;
+    padding-left: 66px;
+    padding-right: 66px;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.55556;
+    text-align: center;
+
+    @media (max-width: 720px) {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  }
+}

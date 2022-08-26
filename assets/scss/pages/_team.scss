@@ -1,0 +1,135 @@
+.Team {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  padding-top: 80px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 66px;
+  margin-right: 66px;
+ 
+ 
+
+  &-title {
+    font-size: 34px;
+    line-height: 1.375;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $primary;
+    font-family: $font-primary;
+
+    &::after {
+      display: block;
+      content: "";
+      background: $gradient;
+      max-width: 100px;
+      width: 100%;
+      height: 1px;
+      opacity: 0.25;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+  }
+
+  &-cardswrapper {
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 0;
+    
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+
+  }
+
+  &Card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+    margin-bottom: 25px;
+    line-height: 1.55556;
+    font-family: $font-secondary;
+    @media (max-width: 1200px) {
+      min-width: 50%;
+    }
+    @media (max-width: 768px) {
+      min-width: 100%;
+    }
+
+    
+  }
+
+  &-titlecard {
+    font-size: 19px;
+    line-height: 1.375;
+    font-weight: 400;
+
+    font-family: $font-secondary;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: $pink;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  &-iconcontent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    margin-left: 8px;
+    font-size: 22px;
+    color: $border-card;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+
+  &-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: $font-secondary;
+    color: #838386;
+    line-height: 1.55556;
+    margin-bottom: 15px;
+  }
+
+  &image {
+    width: 270px;
+    height: 270px;
+    background-size: 100% 100%;
+    border-radius: 50% !important;
+    margin-bottom: 22px;
+  }
+}

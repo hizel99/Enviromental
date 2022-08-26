@@ -1,0 +1,103 @@
+.Features {
+  display: flex;
+  color: $primary;
+  padding-top: 81px;
+  padding-bottom: 81px;
+  margin-left: 66px;
+  margin-right: 66px;
+  flex-wrap: wrap;
+  @media (max-width: 1200px) {
+    
+    margin-inline: 98px;;
+  }
+  
+
+  &-Card {
+    max-width: 25%;
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    line-height: 1.55556;
+    margin-bottom: 15px;
+    @media (max-width: 1200px) {
+      min-width: 50%;
+      padding: 25px 35px;
+      
+    }
+    @media (max-width: 992px) {
+      min-width: 100%;
+    }
+
+    
+  }
+
+  &-cont {
+    border: 1px solid #c2c2c3;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: $font-secondary;
+    padding-left: 37px;
+    padding-right: 37px;
+    max-height: 390.92px;
+    min-height: 384px;
+    height: 100%;
+    &:hover {
+      background: $gray;
+      border-color: $gray;
+    }
+    
+    @media (max-width: 768px) {
+      min-width: 100%;
+      min-height: auto;
+    }
+  }
+
+  &-message {
+    font-family: $font-secondary;
+    font-weight: 300;
+    line-height: 1.55556;
+    font-size: 16px;
+    color: $card-message;
+  }
+
+  &-title {
+    font-weight: 400;
+    font-size: 19px;
+    color: $primary;
+    font-family: $font-secondary;
+    margin-bottom: 25px;
+
+    &::after {
+      width: 100%;
+      display: block;
+      content: "";
+      height: 1px;
+      margin-top: 30px;
+      font-size: 16px;
+      line-height: 1.55556;
+      color: inherit;
+      background-color: currentColor;
+      border: 0;
+      opacity: 0.25;
+    }
+  }
+
+  &-icons {
+    font-family: $font-icon;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    color: $color-icon;
+    margin-bottom: 15px;
+  }
+}
